@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300&display=swap');
-
 /*estilização do corpo da pg*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300&display=swap');
 
 *{
     padding: 0;
@@ -10,13 +10,15 @@
 
 body{
     background-color: rgb(236, 238, 146);
+    height: 100vh;/*vai c adequar a tela q abrir bom colocar*/
+    display: flex;/*para responsivo*/
+    flex-direction: column;/*da a direção do site um em cima do outro*/
+    justify-content: space-between;  /*direciona aonde tem q ficar as partes*/
     
 }
-main{
-    margin: 0rem 10rem 0 10rem;
-}
 
-/*estilização do menu*/
+
+/* estilização do menu */
 
 nav{
     position: fixed;
@@ -32,14 +34,15 @@ ul#menu {
 }
 
 ul#menu li{
-    padding: 0.8rem;
+    padding: 1.4rem;
 }
 
 ul#menu li:hover{
     transform: scale(1.1);
-}
+    
+} 
 
-ul#menu li i{
+ ul#menu li i{
     font-size: 2rem;
     color: black;
     margin: 1rem;
@@ -52,94 +55,116 @@ ul#menu li a{
 }
 
 /*estilização header*/
+header{
+    width: 100%;
+}
 
 header img{
     width: 100%;
     margin-top: 5rem;
-}
+    height: 30rem;
+}  
 
-header h1{
-    text-align: center;
-    margin-top: 3rem;
-}
+/*estilo main */
 
-header p{
-    margin: 0 10rem 0 10rem;
-    padding: 1.5rem;
+main{
+    padding: 2rem 4rem;
+    margin: 0rem 10rem 0 10rem;
+}  
+
+/*estilização do h1*/
+
+#hum h1{
+    font-size: 2rem;
+    margin: 0rem 0 1rem 0;
     text-align: center;
+
 }
 
 /*estilização dos cards*/
 
-section#card{
+
+section#cards{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+#card{
+    width: 25rem;
     padding: 1rem;
-    margin: 1rem;   
-    border-radius: 2rem; 
-    box-shadow: 2px 2px 2px 2px #00000050;
-    transition: transform .1s ease-in-out;
-   
-}
-section#card img:hover{
-    transform: scale(1.1);
+    margin: 1rem;
+    box-shadow: 2px 2px 2px 2px #00000020;
 }
 
-section#card h2{   
-        text-align: center;
-        padding: 1.5rem;
-        font-size: 2rem;
-        margin:2rem 0 2rem 0;
-}
-
-div img{
-    margin-top: 1rem;
-    border-radius: 2rem;
-}
-
-section#card h3{   
+#card h2{
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
     text-align: center;
-    padding: 1.5rem;
-    font-size: 2rem;
-    
 }
 
-section#card button{
+#card h3{
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+#card p{
+    margin: 2rem 0 2rem 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#card img{
+    width: 100%;
+    margin: 0 auto; 
+}
+
+
+
+/*estilização do botão*/
+
+section#cards button{
     border: solid 2px rgb(251, 255, 4);
     padding: 2rem 5rem 2rem 5rem;
     font-size: 1.2rem;
     font-weight: 500;
     display: flex;
-    margin: 02rem auto;
+    margin: 2rem auto;
     background-color: rgb(240, 243, 73);
-    color: pointer;
-    transition: all .2s ease-in-out;
     width: 20%;
     justify-content: center;
     border-radius: 2rem;
+    cursor: pointer;
 }
-section#card button:hover{
+
+section#cards button:hover{
     color: black;
     background-color: rgb(255, 208, 0);
     transform: scale(1.1);
     transition: all.5s;
-    
 }
+ 
 
-section#card{
-    margin-bottom: 4rem;
-}
+/*estilização do footer*/
 
 footer{
     background-color: rgb(255, 230, 0);
     padding: 3rem 3rem 3rem 3rem;
     text-align: center;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
+#pe:hover{
+    font-weight: bold;
+}
 
-
-
+@media only screen and (min-width: 900px) and (max-width:1200px){
+    
+} 
 
 
 
