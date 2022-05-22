@@ -1,6 +1,6 @@
 
 const botao = document.querySelector("#botao");
-const tagH3 = document.querySelector("#situacao"); 
+const h3 = document.querySelector("#situacao"); 
 const img = document.querySelector("#foto")
 
 botao.addEventListener("click", () =>{
