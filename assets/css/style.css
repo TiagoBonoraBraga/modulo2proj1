@@ -14,75 +14,26 @@ body{
     display: flex;/*para responsivo*/
     flex-direction: column;/*da a direção do site um em cima do outro*/
     justify-content: space-between;  /*direciona aonde tem q ficar as partes*/
-    
-}
-
-
-/* estilização do menu */
-
-nav{
-    position: fixed;
-    width: 100%;
-    background-color: rgb(255, 230, 0) ;
-}
-
-ul#menu {
-    list-style: none;
-    display: flex;    
-    justify-content: center;
-    margin: 2rem;
-}
-
-ul#menu li{
-    padding: 1.4rem;
-}
-
-ul#menu li:hover{
-    transform: scale(1.1);
-    
-} 
-
- ul#menu li i{
-    font-size: 2rem;
-    color: black;
-    margin: 1rem;
-}
-
-ul#menu li a{
-    color: black;
-    text-decoration: none;
-    font-size: 2rem
 }
 
 /*estilização header*/
+
 header{
     width: 100%;
 }
 
 header img{
     width: 100%;
-    margin-top: 5rem;
-    height: 30rem;
+    height: 20rem;
 }  
 
 /*estilo main */
 
 main{
-    padding: 2rem 4rem;
-    margin: 0rem 10rem 0 10rem;
+    text-align: center;
 }  
 
-/*estilização do h1*/
-
-#hum h1{
-    font-size: 2rem;
-    margin: 0rem 0 1rem 0;
-    text-align: center;
-
-}
-
 /*estilização dos cards*/
-
 
 section#cards{
     display: flex;
@@ -99,16 +50,11 @@ section#cards{
     box-shadow: 2px 2px 2px 2px #00000020;
 }
 
-#card h2{
+#card h1{
     font-size: 1.5rem;
-    margin: 2rem 0 1rem 0;
+    margin: 0rem 0 1rem 0;
     text-align: center;
-}
 
-#card h3{
-    font-size: 1.2rem;
-    margin: 1rem 0 1rem 0;
-    text-align: center;
 }
 
 #card p{
@@ -122,7 +68,11 @@ section#cards{
     margin: 0 auto; 
 }
 
-
+#card h3{
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+}
 
 /*estilização do botão*/
 
@@ -133,7 +83,7 @@ section#cards button{
     font-weight: 500;
     display: flex;
     margin: 2rem auto;
-    background-color: rgb(240, 243, 73);
+    background-color: rgb(243, 189, 73);
     width: 20%;
     justify-content: center;
     border-radius: 2rem;
@@ -151,10 +101,10 @@ section#cards button:hover{
 /*estilização do footer*/
 
 footer{
-    background-color: rgb(255, 230, 0);
+    background-color: rgb(255, 153, 0);
     padding: 3rem 3rem 3rem 3rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -162,9 +112,9 @@ footer{
     font-weight: bold;
 }
 
-@media only screen and (min-width: 900px) and (max-width:1200px){
+/* @media only screen and (min-width: 900px) and (max-width:1200px){
     
-} 
+}  */
 
 
 
