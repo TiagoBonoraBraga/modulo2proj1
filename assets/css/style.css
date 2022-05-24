@@ -100,9 +100,9 @@ section#cards button:hover{
 
 /*estilização do footer*/
 
-footer{
+footer{    
     background-color: rgb(255, 153, 0);
-    padding: 3rem 3rem 3rem 3rem;
+    padding: 5rem 3rem 3rem 3rem;
     text-align: center;
     font-size: 1rem;
     cursor: pointer;
@@ -110,9 +110,25 @@ footer{
 
 #pe:hover{
     font-weight: bold;
+    
 }
 
+section#logo img{
+    
+  margin: 2rem;
+  width: 5%;
 
+}
+
+@media screen and (max-width: 300px){
+    
+    #cards, #p , header{
+        
+        width:100%;
+    }
+
+    
+}
 
 
 
